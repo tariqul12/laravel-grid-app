@@ -25,6 +25,17 @@
                     <form class="form-horizontal" method="POST" action="{{route('sub-category.update')}}" enctype="multipart/form-data">
                         @csrf
                         <div class="row mb-4">
+                            <label for="firstName" class="col-md-3 form-label"> Category Name</label>
+                            <div class="col-md-9">
+                              <select name="category_id" class=" form-control">
+                                <option value="">--Select Category--</option>
+                                @foreach ($categories as $category)
+                                <option value="{{$category->id}}" @selected($category->id == $sub_category->category_id)>{{$category->name}}</option>
+                                @endforeach
+                              </select>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
                             <label for="firstName" class="col-md-3 form-label">Sub Category Name</label>
                             <div class="col-md-9">
                                 <input class="form-control" id="" value="{{$sub_category->name}}" placeholder="Sub Category Name" name="name" type="text" />

@@ -4,7 +4,9 @@ use App\Http\Controllers\BrandController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\GridAppController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SubCategoryController;
+use App\Http\Controllers\UnitController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -50,6 +52,19 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',])
     Route::post('/brand/store',[BrandController::class,'store'])->name('brand.store');
     Route::post('/brand/update',[BrandController::class,'update'])->name('brand.update');
     Route::post('/brand/delete',[BrandController::class,'delete'])->name('brand.delete');
+
+
+    Route::get('/unti/create',[UnitController::class,'create'])->name('unit.create');
+    Route::get('/unti/index',[UnitController::class,'index'])->name('unit.index');
+
+    Route::post('/unit/store',[UnitController::class,'store'])->name('unit.store');
+    Route::post('/unit/update',[UnitController::class,'update'])->name('unit.update');
+    Route::post('/unit/delete',[UnitController::class,'delete'])->name('unit.delete');
+
+    Route::get('/product/create',[ProductController::class,'create'])->name('product.create');
+    Route::get('/product/index',[ProductController::class,'index'])->name('product.index');
+
+
 
 
 

@@ -33,7 +33,7 @@ class SubCategory extends Model
         }
 
         self::$subCategory->name = $request->name;
-        // self::$subCategory->category_id = $request->category_id;
+        self::$subCategory->category_id = $request->category_id;
         self::$subCategory->description = $request->description;
         self::$subCategory->image = self::$imageUrl;
         self::$subCategory->status = $request->status;
@@ -52,7 +52,7 @@ class SubCategory extends Model
     }
     private static function getImageUrl($image)
     {
-        $extension = $image->getClientOriginalExtension();
+        $extension = $image->extension();
         $imageName = time() . '.' . $extension;
         $directory = "Upload/sub-category-image/";
         $image->move($directory, $imageName);

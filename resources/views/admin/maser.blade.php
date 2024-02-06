@@ -1129,20 +1129,12 @@
                                         <path
                                             d="M12,2C6.4771729,2,2,6.4771729,2,12s4.4771729,10,10,10c5.5201416-0.0064697,9.9935303-4.4798584,10-10C22,6.4771729,17.5228271,2,12,2z M19.7819214,7.5h-9.2255249l2.5594482-4.4225464C15.9681396,3.4337769,18.4015503,5.1206055,19.7819214,7.5z M14.0211182,8.5l2.0198364,3.503479L14.0192871,15.5H9.9798584l-2.0228882-3.5084229L9.9776611,8.5H14.0211182z M12,3c0.0019531,0,0.0038452,0.0003052,0.0057983,0.0003052L7.380249,10.991272L4.8326416,6.5727539C6.4761353,4.4058838,9.0706177,3,12,3z M3,12c0-1.6405029,0.4459839-3.1737671,1.2128296-4.49823L8.8244019,15.5H3.7061157C3.2515259,14.4241333,3,13.2414551,3,12z M4.2138672,16.5h9.2272339l-2.5576782,4.423584C8.0288696,20.5695801,5.5935059,18.8815918,4.2138672,16.5z M12,21c-0.0021362,0-0.0041504-0.0003052-0.0062866-0.0003052l4.6235962-7.996582l2.550354,4.4237671C17.524231,19.5939941,14.9295654,21,12,21z M15.1746826,8.5h5.1159668C20.7460938,9.5758057,20.9986572,10.7584839,21,12c0,1.6407471-0.446106,3.1741943-1.2131348,4.4987183L15.1746826,8.5z" />
                                     </svg>
-                                    <span class="side-menu__label">Icons</span><i
+                                    <span class="side-menu__label">Unit</span><i
                                         class="angle fa fa-angle-right"></i></a>
                                 <ul class="slide-menu">
-                                    <li class="side-menu-label1"><a href="javascript:void(0)">Icons</a></li>
-                                    <li><a href="icons.html" class="slide-item">Font Awesome</a></li>
-                                    <li><a href="icons2.html" class="slide-item"> Material Design Icons</a></li>
-                                    <li><a href="icons3.html" class="slide-item"> Simple Line Icons</a></li>
-                                    <li><a href="icons4.html" class="slide-item"> Feather Icons</a></li>
-                                    <li><a href="icons5.html" class="slide-item"> Ionic Icons</a></li>
-                                    <li><a href="icons6.html" class="slide-item"> Flag Icons</a></li>
-                                    <li><a href="icons7.html" class="slide-item"> pe7 Icons</a></li>
-                                    <li><a href="icons8.html" class="slide-item"> Themify Icons</a></li>
-                                    <li><a href="icons9.html" class="slide-item">Typicons Icons</a></li>
-                                    <li><a href="icons10.html" class="slide-item">Weather Icons</a></li>
+                            
+                                    <li><a href="{{route('unit.create')}}" class="slide-item">Create Unit</a></li>
+                                    <li><a href="{{route('unit.index')}}" class="slide-item">Manage Unit</a></li>
                                 </ul>
                             </li>
                             <li class="slide">
@@ -1152,13 +1144,12 @@
                                         <path
                                             d="M12.1124268,2.0010986C7.6941528,1.9389648,4.0620728,5.4703979,4,9.8886719c0,5.4482422,7.3642578,11.7285156,7.6777344,11.9931641C11.7677002,21.958313,11.881958,22.0001831,12,22c0.118042,0.0001831,0.2322998-0.041687,0.3222656-0.1181641C12.6357422,21.6171875,20,15.3369141,20,9.8886719C19.9391479,5.5579224,16.4431763,2.0619507,12.1124268,2.0010986z M12,20.8339844C10.5839844,19.5625,5,14.2666016,5,9.8886719C5.0353394,6.0553589,8.166626,2.973877,12,3c3.833374-0.026123,6.9647217,3.0553589,7,6.8886719C19,14.2626953,13.414978,19.5615234,12,20.8339844z M12,7c-1.6568604,0-3,1.3431396-3,3s1.3431396,3,3,3c1.6561279-0.0018311,2.9981689-1.3438721,3-3C15,8.3431396,13.6568604,7,12,7z M12,12c-1.1045532,0-2-0.8954468-2-2s0.8954468-2,2-2c1.1040039,0.0014038,1.9985962,0.8959961,2,2C14,11.1045532,13.1045532,12,12,12z" />
                                     </svg>
-                                    <span class="side-menu__label">Maps</span><i
+                                    <span class="side-menu__label">Product</span><i
                                         class="angle fa fa-angle-right"></i></a>
                                 <ul class="slide-menu">
-                                    <li class="side-menu-label1"><a href="javascript:void(0)">Maps</a></li>
-                                    <li><a href="maps1.html" class="slide-item">Leaflet Maps</a></li>
-                                    <li><a href="maps2.html" class="slide-item">Mapel Maps</a></li>
-                                    <li><a href="maps.html" class="slide-item">Vector Maps</a></li>
+                                  
+                                    <li><a href="{{route('product.create')}}" class="slide-item">Create Product</a></li>
+                                    <li><a href="{{route('product.index')}}" class="slide-item">Manage Product</a></li>
                                 </ul>
                             </li>
                             <li>

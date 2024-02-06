@@ -23,12 +23,16 @@ class SubCategoryController extends Controller
     }
     public function edit($id)
     {
-        return view('admin.sub-category.edit',['sub_category'=>SubCategory::find($id)]);
+        return view('admin.sub-category.edit',[
+            'sub_category'=>SubCategory::find($id),
+            'categories' =>Category::all()
+        ]);
     }
     public function update(Request $request)
     {
         SubCategory::updateCategory($request);
         return redirect('/sub-category/index');
+        // return $request;
     }
     public function delete($id)
     {
